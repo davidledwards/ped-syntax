@@ -1,0 +1,27 @@
+[syntax]
+name = "Rust"
+extensions = ["rs"]
+
+[tokens]
+# Reserved words
+'\<(abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\>' = [1, 232]
+
+# Numbers
+'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = [4, 232]
+
+# Constants
+'[A-Z][A-Z_]+' = [3, 232]
+
+# Macros
+'[a-z_]+!' = [5, 232]
+
+# Attributes
+'#!?\[.*?\]' = [4, 232]
+
+# Strings
+'"([^"\\]|(\\.))*"' = [2, 232]
+'r#+".*"#+' = [2, 232]
+
+# Comments
+'//.*$' = [8, 232]
+'/\*[\s\S]*?\*/' = [8, 232]

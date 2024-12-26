@@ -1,0 +1,31 @@
+[syntax]
+name = "TOML"
+extensions = ["toml"]
+
+[tokens]
+# Reserved words
+'\<(false|true)\>' = [1, 232]
+
+# Numbers
+'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = [4, 232]
+
+# Headers
+'^\s*\[[[:word:]-\.]+\]' = [4, 232]
+
+# Bare keys
+'^\s*[[:word:]-\.]+' = [5, 232]
+
+# Multi-line basic string
+'"""[\s\S]*?"""' = [2, 232]
+
+# Basic string
+'"([^"\\]*(\\.[^"\\]*)*)"' = [2, 232]
+
+# Multi-line literal string
+"'''[\\s\\S]*?'''" = [2, 232]
+
+# Literal string
+"'[^'\\n]*'" = [2, 232]
+
+# Comments
+'#.*$' = [8, 232]
