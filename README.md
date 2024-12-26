@@ -26,7 +26,14 @@ Syntax configuration files are formatted according to the [TOML](https://toml.io
 
 The following example illustrates the expected layout. Under `[syntax]`, `name` is a canonical name given to the syntax definition and `extensions` is an array of one or more file extensions without the preceding dot.
 
-The `[tokens]` table contains any number of regular expressions as keys and 2-tuples as values representing colors, where the first number is the foreground and the second is the background, both in the range of `0` to `255`. The order of tokens is important because earlier patterns will match before later patterns.
+The `[tokens]` table contains any number of regular expressions as keys and a value representing the color. The order of tokens is important because earlier patterns will match before later patterns.
+
+Color values may be expressed in any of the following ways:
+
+- a number or string in the range of `0` to `255`
+- a string containing the name of a color that must resolve to a color value
+
+### Example
 
 ```toml
 [syntax]
@@ -35,12 +42,14 @@ extensions = ["c", "h"]
 
 [tokens]
 # Numbers
-'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = [4, 232]
+'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = "blue"
 
 # Comments
-'//.*$' = [8, 232]
-'/\*[\s\S]*?\*/' = [8, 232]
+'//.*$' = 8
+'/\*[\s\S]*?\*/' = "8"
 ```
+
+### Patterns
 
 The `ped` editor uses the [regex-lite](https://docs.rs/regex-lite/latest/regex_lite/index.html) library for compiling patterns defined under `[tokens]`. As a consequence, token patterns must conform to the requirements and limitations defined by this library.
 

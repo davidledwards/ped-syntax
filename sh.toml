@@ -1,18 +1,26 @@
 [syntax]
 name = "Shell"
-extensions = ["sh", "bashrc", "bash_aliases", "bash_functions", "bash_login", "bash_logout", "bash_profile"]
+extensions = [
+    "sh",
+    "bashrc",
+    "bash_aliases",
+    "bash_functions",
+    "bash_login",
+    "bash_logout",
+    "bash_profile",
+]
 
 [tokens]
 # Reserved words
-'\<(case|do|done|elif|else|esac|fi|for|function|if|in|select|then|time|until|while)\>' = [1, 232]
+'\<(case|do|done|elif|else|esac|fi|for|function|if|in|select|then|time|until|while)\>' = "red"
 
-'\<(alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|compopt|continue|declare|dirs|disown|echo|enable|eval|exec|exit|export|false|fc|fg|getopts|hash|help|history|jobs|kill|let|local|logout|mapfile|popd|printf|pushd|pwd|read|readarray|readonly|return|set|shift|shopt|source|suspend|test|times|trap|true|type|typeset|ulimit|umask|unalias|unset|wait)\>' = [1, 232]
+'\<(alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|compopt|continue|declare|dirs|disown|echo|enable|eval|exec|exit|export|false|fc|fg|getopts|hash|help|history|jobs|kill|let|local|logout|mapfile|popd|printf|pushd|pwd|read|readarray|readonly|return|set|shift|shopt|source|suspend|test|times|trap|true|type|typeset|ulimit|umask|unalias|unset|wait)\>' = "red"
 
-'-(eq|ne|gt|lt|ge|le|s|n|z)\>' = [1, 232]
+'-(eq|ne|gt|lt|ge|le|s|n|z)\>' = "red"
 
 # Strings
-'"([^"\\]*(\\.[^"\\]*)*)"' = [2, 232]
-"'([^'\\\\]*(\\\\.[^'\\\\]*)*)'" = [2, 232]
+'"([^"\\]*(\\.[^"\\]*)*)"' = "green"
+"'([^'\\\\]*(\\\\.[^'\\\\]*)*)'" = "green"
 
 # Comments
-'#.*$' = [8, 232]
+'#.*$' = "gray"

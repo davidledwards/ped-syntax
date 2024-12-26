@@ -4,28 +4,28 @@ extensions = ["toml"]
 
 [tokens]
 # Reserved words
-'\<(false|true)\>' = [1, 232]
+'\<(false|true)\>' = "red"
 
 # Numbers
-'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = [4, 232]
+'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = "blue"
 
 # Headers
-'^\s*\[[[:word:]-\.]+\]' = [4, 232]
+'^\s*\[[[:word:]-\.]+\]' = "blue"
 
 # Bare keys
-'^\s*[[:word:]-\.]+' = [5, 232]
+'^\s*[[:word:]-\.]+' = "magenta"
 
 # Multi-line basic string
-'"""[\s\S]*?"""' = [2, 232]
+'"""[\s\S]*?"""' = "green"
 
 # Basic string
-'"([^"\\]*(\\.[^"\\]*)*)"' = [2, 232]
+'"([^"\\]*(\\.[^"\\]*)*)"' = "green"
 
 # Multi-line literal string
-"'''[\\s\\S]*?'''" = [2, 232]
+"'''[\\s\\S]*?'''" = "green"
 
 # Literal string
-"'[^'\\n]*'" = [2, 232]
+"'[^'\\n]*'" = "green"
 
 # Comments
-'#.*$' = [8, 232]
+'#.*$' = "gray"
