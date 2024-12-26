@@ -9,9 +9,8 @@ The easiest method of installation is to clone this repository into a directory 
 For example, the following clones this repository into a well-known directory.
 
 ```shell
-cd
-mkdir .ped
-git clone https://github.com/davidledwards/ped-syntax.git .ped/syntax
+mkdir ~/.ped
+git clone https://github.com/davidledwards/ped-syntax.git ~/.ped/syntax
 ```
 
 ## Configuration Files
