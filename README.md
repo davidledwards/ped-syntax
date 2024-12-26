@@ -1,10 +1,20 @@
-# Syntax Configurations for [ped](https://github.com/davidledwards/ped)
+# Syntax Configurations
 
 A collection of syntax configuration files for [ped](https://github.com/davidledwards/ped).
 
 ## Installing
 
 The easiest method of installation is to clone this repository into a directory where `ped` will automatically discover and load configuration files.
+
+For example, the following clones this repository into a well-known directory.
+
+```shell
+cd
+mkdir .ped
+git clone https://github.com/davidledwards/ped-syntax.git .ped/syntax
+```
+
+## Configuration Files
 
 ## Contributing
 
