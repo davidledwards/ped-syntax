@@ -1,6 +1,6 @@
 [syntax]
 name = "Java"
-extensions = ["java"]
+files = ['\.java$']
 
 [tokens]
 # Reserved words

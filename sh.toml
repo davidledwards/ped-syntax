@@ -1,13 +1,14 @@
 [syntax]
 name = "Shell"
-extensions = [
-    "sh",
-    "bashrc",
-    "bash_aliases",
-    "bash_functions",
-    "bash_login",
-    "bash_logout",
-    "bash_profile",
+files = [
+    '\.sh$',
+    '\.bashrc$',
+    '\.bash_aliases$',
+    '\.bash_functions$',
+    '\.bash_login$',
+    '\.bash_logout$',
+    '\.bash_profile$',
+    '\.profile$',
 ]
 
 [tokens]

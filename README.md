@@ -24,7 +24,15 @@ git pull
 
 Syntax configuration files are formatted according to the [TOML](https://toml.io) specification.
 
-The following example illustrates the expected layout. Under `[syntax]`, `name` is a canonical name given to the syntax definition and `extensions` is an array of one or more file extensions without the preceding dot.
+The following example illustrates the expected layout. Under `[syntax]`, `name` is a canonical name given to the syntax definition, and `files` is an array of one or more regular expressions for matching file names.
+
+For example, the following will match any file name ending in `.c` and `.h`.
+
+```toml
+[syntax]
+name = "C"
+files = ['\.c$', '\.h$']
+```
 
 The `[tokens]` table contains any number of regular expressions as keys and a value representing the color. The order of tokens is important because earlier patterns will match before later patterns.
 
@@ -38,7 +46,7 @@ Color values may be expressed in any of the following ways:
 ```toml
 [syntax]
 name = "C"
-extensions = ["c", "h"]
+files = ['\.c$', '\.h$']
 
 [tokens]
 # Numbers

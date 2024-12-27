@@ -1,6 +1,6 @@
 [syntax]
 name = "C/C++"
-extensions = ["c", "cc", "cpp", "cxx", "C", "h", "hh", "hpp", "hxx", "H", "ino"]
+files = ['\.c(c|pp|xx)?$', '\.h(h|pp|xx)?$', '\.(C|H)$', '\.ino$']
 
 [tokens]
 # Reserved words

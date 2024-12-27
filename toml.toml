@@ -1,6 +1,6 @@
 [syntax]
 name = "TOML"
-extensions = ["toml"]
+files = ['\.toml$']
 
 [tokens]
 # Reserved words

@@ -1,6 +1,6 @@
 [syntax]
 name = "Markdown"
-extensions = ["md"]
+files = ['\.md$', '\.markdown$', '\.mk(dn?)?$']
 
 [tokens]
 # Headers

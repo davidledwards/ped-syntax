@@ -1,6 +1,6 @@
 [syntax]
 name = "Rust"
-extensions = ["rs"]
+files = ['\.rs$']
 
 [tokens]
 # Reserved words

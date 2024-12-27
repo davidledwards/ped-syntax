@@ -1,6 +1,6 @@
 [syntax]
 name = "Ruby"
-extensions = ["rb"]
+files = ['\.rb$']
 
 [tokens]
 # Reserved words
