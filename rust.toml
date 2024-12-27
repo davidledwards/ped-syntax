@@ -4,16 +4,16 @@ extensions = ["rs"]
 
 [tokens]
 # Reserved words
-'\<(abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\>' = "red"
+'\b(abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "red"
 
 # Numbers
-'\<[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\>' = "blue"
+'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
 
 # Constants
-'[A-Z][A-Z_]+' = "yellow"
+'\b[A-Z_][A-Z0-9_]+\b' = "yellow"
 
 # Macros
-'[a-z_]+!' = "magenta"
+'[a-z_]+!' = "bright-red"
 
 # Attributes
 '#!?\[.*?\]' = "blue"

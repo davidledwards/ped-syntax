@@ -4,10 +4,10 @@ extensions = ["java"]
 
 [tokens]
 # Reserved words
-'\<(boolean|byte|char|double|false|float|int|long|new|short|this|transient|void|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|true|volatile)\>' = "red"
+'\b(boolean|byte|char|double|false|float|int|long|new|short|this|transient|void|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|true|volatile)\b' = "red"
 
 # Numbers
-'\<[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\>' = "blue"
+'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
 
 # Strings
 '"([^"\\]|(\\.))*"' = "green"

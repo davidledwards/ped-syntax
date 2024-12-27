@@ -4,10 +4,10 @@ extensions = ["toml"]
 
 [tokens]
 # Reserved words
-'\<(false|true)\>' = "red"
+'\b(false|true)\b' = "red"
 
 # Numbers
-'\<[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\>' = "blue"
+'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
 
 # Headers
 '^\s*\[[[:word:]-\.]+\]' = "blue"

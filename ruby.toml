@@ -4,10 +4,10 @@ extensions = ["rb"]
 
 [tokens]
 # Reserved words
-'\<(BEGIN|END|alias|and|begin|break|case|class|def|defined\?|do|else|elsif|end|ensure|false|for|if|in|module|next|nil|not|or|redo|rescue|retry|return|self|super|then|true|undef|unless|until|when|while|yield)\>' = "red"
+'\b(BEGIN|END|alias|and|begin|break|case|class|def|defined\?|do|else|elsif|end|ensure|false|for|if|in|module|next|nil|not|or|redo|rescue|retry|return|self|super|then|true|undef|unless|until|when|while|yield)\b' = "red"
 
 # Numbers
-'\<[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\>' = "blue"
+'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
 
 # Strings
 '"([^"\\]*(\\.[^"\\]*)*)"' = "green"
