@@ -7,7 +7,7 @@ extensions = ["toml"]
 '\<(false|true)\>' = "red"
 
 # Numbers
-'[+-]?\d+(\.\d+)?([eE][+-]?\d+)?' = "blue"
+'\<[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\>' = "blue"
 
 # Headers
 '^\s*\[[[:word:]-\.]+\]' = "blue"
