@@ -1,6 +1,6 @@
 [syntax]
 name = "TOML"
-files = ['\.toml$']
+files = ['\.toml$', '\.?pedrc$']
 
 [tokens]
 # Reserved words
