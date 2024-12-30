@@ -1,0 +1,14 @@
+[syntax]
+name = "HTML"
+files = ['\.html?$']
+
+[tokens]
+# Tags
+'<[A-Za-z\-:]+[A-Za-z0-9\-:]*?(\s|>)' = "magenta"
+'</[A-Za-z\-:]+[A-Za-z0-9\-:]*?>' = "magenta"
+
+# Strings
+'"([^"\\]|(\\.))*"' = "green"
+
+# Comments
+'<!--[\s\S]*?-->' = "gray"
