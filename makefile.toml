@@ -1,0 +1,24 @@
+[syntax]
+name = "Makefile"
+files = ['[Mm]akefile$', '\.mk$']
+
+[tokens]
+# Reserved words
+'\b(ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "red"
+
+# Built-in functoins
+'\b(subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "blue"
+
+# Built-in variables
+'\$[@<^?*+|]' = "magenta"
+
+# Operators
+'[=,%]' = "magenta"
+'\+=|\?=|:=|&&|\|\|' = "magenta"
+
+# Strings
+'"([^"\\]|(\\.))*"' = "green"
+"'([^'\\\\]|(\\\\.))*'" = "green"
+
+# Comments
+'#.*$' = "gray"
