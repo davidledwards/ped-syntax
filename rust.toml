@@ -4,10 +4,10 @@ files = ['\.rs$']
 
 [tokens]
 # Reserved words
-'\b(abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "red"
+'\b(?:abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "red"
 
 # Numbers
-'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
 
 # Constants
 '\b[A-Z_][A-Z0-9_]+\b' = "yellow"
@@ -19,8 +19,8 @@ files = ['\.rs$']
 '#!?\[.*?\]' = "blue"
 
 # Strings
-'"([^"\\]|(\\.))*"' = "green"
-'r#+".*"#+' = "green"
+'"(?:[^"\\]|\\[\s\S])*"' = "green"
+'r#+"[\s\S]*"#+' = "green"
 
 # Comments
 '//.*$' = "gray"

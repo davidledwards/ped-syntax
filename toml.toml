@@ -4,10 +4,10 @@ files = ['\.toml$', '\.?pedrc$']
 
 [tokens]
 # Reserved words
-'\b(false|true)\b' = "red"
+'\b(?:false|true)\b' = "red"
 
 # Numbers
-'\b[+-]?\d+(\.\d+)?([eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
 
 # Headers
 '^\s*\[[[:word:]-\.]+\]' = "blue"
@@ -19,7 +19,7 @@ files = ['\.toml$', '\.?pedrc$']
 '"""[\s\S]*?"""' = "green"
 
 # Basic string
-'"([^"\\]*(\\.[^"\\]*)*)"' = "green"
+'"(?:[^"\\]|\\[\s\S])*"' = "green"
 
 # Multi-line literal string
 "'''[\\s\\S]*?'''" = "green"

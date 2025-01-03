@@ -4,10 +4,10 @@ files = ['[Mm]akefile$', '\.mk$']
 
 [tokens]
 # Reserved words
-'\b(ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "red"
+'\b(?:ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "red"
 
 # Built-in functoins
-'\b(subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "blue"
+'\b(?:subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "blue"
 
 # Built-in variables
 '\$[@<^?*+|]' = "magenta"
@@ -17,8 +17,8 @@ files = ['[Mm]akefile$', '\.mk$']
 '\+=|\?=|:=|&&|\|\|' = "magenta"
 
 # Strings
-'"([^"\\]|(\\.))*"' = "green"
-"'([^'\\\\]|(\\\\.))*'" = "green"
+'"(?:[^"\\]|\\[\s\S])*"' = "green"
+"'(?:[^'\\\\]|\\\\[\\s\\S])*'" = "green"
 
 # Comments
 '#.*$' = "gray"
