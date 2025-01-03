@@ -19,7 +19,7 @@ files = ['\.toml$', '\.?pedrc$']
 '"""[\s\S]*?"""' = "green"
 
 # Basic string
-'"(?:[^"\\]|\\[\s\S])*"' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
 
 # Multi-line literal string
 "'''[\\s\\S]*?'''" = "green"

@@ -20,7 +20,7 @@ files = ['\.c(c|pp|xx)?$', '\.h(h|pp|xx)?$', '\.(C|H)$', '\.ino$']
 '\b[A-Z_][A-Z0-9_]+\b' = "yellow"
 
 # Strings
-'"(?:[^"\\]|\\[\s\S])*"' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
 
 # Comments
 '//.*$' = "gray"
