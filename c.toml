@@ -4,24 +4,24 @@ files = ['\.c(c|pp|xx)?$', '\.h(h|pp|xx)?$', '\.(C|H)$', '\.ino$']
 
 [tokens]
 # Reserved words
-'\<(?:alignas|alignof|and|and_eq|asm|auto|bitand|bitor|bool|break|case|catch|char|char8_t|char16_t|char32_t|class|compl|concept|const|consteval|constexpr|constinit|const_cast|continue|co_await|co_return|co_yield|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|false|final|float|for|friend|goto|if|import|inline|int|long|module|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|or|or_eq|override|private|protected|public|register|reinterpret_cast|requires|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while|xor|xor_eq)\>' = "red"
+'\<(?:alignas|alignof|and|and_eq|asm|auto|bitand|bitor|bool|break|case|catch|char|char8_t|char16_t|char32_t|class|compl|concept|const|consteval|constexpr|constinit|const_cast|continue|co_await|co_return|co_yield|decltype|default|delete|do|double|dynamic_cast|else|enum|explicit|export|extern|false|final|float|for|friend|goto|if|import|inline|int|long|module|mutable|namespace|new|noexcept|not|not_eq|nullptr|operator|or|or_eq|override|private|protected|public|register|reinterpret_cast|requires|return|short|signed|sizeof|static|static_assert|static_cast|struct|switch|template|this|thread_local|throw|true|try|typedef|typeid|typename|union|unsigned|using|virtual|void|volatile|wchar_t|while|xor|xor_eq)\>' = "orchid-bloom"
 
 # Preprocessor reserved words
-'^\s*#\s*(?:define|elif|else|endif|error|if|ifdef|ifndef|include|line|pragma|undef)' = "bright-red"
+'^\s*#\s*(?:define|elif|else|endif|error|if|ifdef|ifndef|include|line|pragma|undef)' = "misty-aqua"
 
 # Binary/Hex numbers
-'\b0b[01]+\b' = "magenta"
-'\b0x[0-9A-Fa-f]+\b' = "magenta"
+'\b0b[01]+\b' = "crystal-cyan"
+'\b0x[0-9A-Fa-f]+\b' = "crystal-cyan"
 
 # Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Constants
-'\b[A-Z_][A-Z0-9_]+\b' = "yellow"
+'\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
 
 # Comments
-'//.*$' = "gray"
-'/\*[\s\S]*?\*/' = "gray"
+'//.*$' = "sage-green"
+'/\*[\s\S]*?\*/' = "sage-green"

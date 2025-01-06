@@ -4,28 +4,28 @@ files = ['\.toml$', '\.?pedrc$']
 
 [tokens]
 # Reserved words
-'\b(?:false|true)\b' = "red"
+'\b(?:false|true)\b' = "orchid-bloom"
 
 # Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Headers
-'^\s*\[[[:word:]-\.]+\]' = "blue"
+'^\s*\[[[:word:]-\.]+\]' = "misty-aqua"
 
 # Bare keys
-'^\s*[[:word:]-\.]+' = "magenta"
+'^\s*[[:word:]-\.]+' = "golden-glow"
 
 # Multi-line basic string
-'"""[\s\S]*?"""' = "green"
+'"""[\s\S]*?"""' = "peachy-orange"
 
 # Basic string
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
 
 # Multi-line literal string
-"'''[\\s\\S]*?'''" = "green"
+"'''[\\s\\S]*?'''" = "peachy-orange"
 
 # Literal string
-"'[^'\\n]*'" = "green"
+"'[^'\\n]*'" = "peachy-orange"
 
 # Comments
-'#.*$' = "gray"
+'#.*$' = "sage-green"

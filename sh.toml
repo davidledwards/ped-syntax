@@ -13,15 +13,15 @@ files = [
 
 [tokens]
 # Reserved words
-'\b(?:case|do|done|elif|else|esac|fi|for|function|if|in|select|then|time|until|while)\b' = "red"
+'\b(?:case|do|done|elif|else|esac|fi|for|function|if|in|select|then|time|until|while)\b' = "orchid-bloom"
 
-'\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|compopt|continue|declare|dirs|disown|echo|enable|eval|exec|exit|export|false|fc|fg|getopts|hash|help|history|jobs|kill|let|local|logout|mapfile|popd|printf|pushd|pwd|read|readarray|readonly|return|set|shift|shopt|source|suspend|test|times|trap|true|type|typeset|ulimit|umask|unalias|unset|wait)\b' = "red"
+'\b(?:alias|bg|bind|break|builtin|caller|cd|command|compgen|complete|compopt|continue|declare|dirs|disown|echo|enable|eval|exec|exit|export|false|fc|fg|getopts|hash|help|history|jobs|kill|let|local|logout|mapfile|popd|printf|pushd|pwd|read|readarray|readonly|return|set|shift|shopt|source|suspend|test|times|trap|true|type|typeset|ulimit|umask|unalias|unset|wait)\b' = "crystal-cyan"
 
-'-(?:eq|ne|gt|lt|ge|le|s|n|z)\b' = "red"
+'-(?:eq|ne|gt|lt|ge|le|s|n|z)\b' = "misty-aqua"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
-"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "peachy-orange"
 
 # Comments
-'#.*$' = "gray"
+'#.*$' = "sage-green"

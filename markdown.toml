@@ -4,17 +4,17 @@ files = ['\.md$', '\.markdown$', '\.mk(dn?)?$']
 
 [tokens]
 # Headers
-'^#{1,6}.*' = "blue"
+'^#{1,6}.*' = "twilight-blue"
 
 # Emphasis
-'(?:^|[[:space:]])(?:_[^ ][^_]*_|\*[^ ][^*]*\*)' = "red"
+'(?:^|[[:space:]])(?:_[^ ][^_]*_|\*[^ ][^*]*\*)' = "orchid-bloom"
 
 # Emphasis (strong)
-'(?:^|[[:space:]])(?:__[^ ][^_]*__|\*\*[^ ][^*]*\*\*)' = "red"
+'(?:^|[[:space:]])(?:__[^ ][^_]*__|\*\*[^ ][^*]*\*\*)' = "orchid-bloom"
 
 # code
-'```.*$' = "magenta"
-'`[^`\n]*`' = "magenta"
+'```.*$' = "misty-aqua"
+'`[^`\n]*`' = "misty-aqua"
 
 # links
-'\[.*?\]\(.*?\)' = "green"
+'\[.*?\]\(.*?\)' = "peachy-orange"

@@ -4,15 +4,15 @@ files = ['\.rb$']
 
 [tokens]
 # Reserved words
-'\b(?:BEGIN|END|alias|and|begin|break|case|class|def|defined\?|do|else|elsif|end|ensure|false|for|if|in|module|next|nil|not|or|redo|rescue|retry|return|self|super|then|true|undef|unless|until|when|while|yield)\b' = "red"
+'\b(?:BEGIN|END|alias|and|begin|break|case|class|def|defined\?|do|else|elsif|end|ensure|false|for|if|in|module|next|nil|not|or|redo|rescue|retry|return|self|super|then|true|undef|unless|until|when|while|yield)\b' = "orchid-bloom"
 
 # Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
-"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "peachy-orange"
 
 # Comments
-'#[^{].*$' = "gray"
-'##[^{].*$' = "gray"
+'#[^{].*$' = "sage-green"
+'##[^{].*$' = "sage-green"

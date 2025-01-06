@@ -4,14 +4,14 @@ files = ['\.java$']
 
 [tokens]
 # Reserved words
-'\b(?:boolean|byte|char|double|false|float|int|long|new|short|this|transient|void|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|true|volatile)\b' = "red"
+'\b(?:boolean|byte|char|double|false|float|int|long|new|short|this|transient|void|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|true|volatile)\b' = "orchid-bloom"
 
 # Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
 
 # Comments
-'//.*$' = "gray"
-'/\*[\s\S]*?\*/' = "gray"
+'//.*$' = "sage-green"
+'/\*[\s\S]*?\*/' = "sage-green"

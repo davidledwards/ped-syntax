@@ -4,21 +4,21 @@ files = ['[Mm]akefile$', '\.mk$']
 
 [tokens]
 # Reserved words
-'\b(?:ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "red"
+'\b(?:ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "orchid-bloom"
 
 # Built-in functoins
-'\b(?:subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "blue"
+'\b(?:subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "crystal-cyan"
 
 # Built-in variables
-'\$[@<^?*+|]' = "magenta"
+'\$[@<^?*+|]' = "misty-aqua"
 
 # Operators
-'[=,%]' = "magenta"
-'\+=|\?=|:=|&&|\|\|' = "magenta"
+'[=,%]' = "lavender-haze"
+'\+=|\?=|:=|&&|\|\|' = "lavender-haze"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
-"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "peachy-orange"
 
 # Comments
-'#.*$' = "gray"
+'#.*$' = "sage-green"

@@ -4,24 +4,24 @@ files = ['\.rs$']
 
 [tokens]
 # Reserved words
-'\b(?:abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "red"
+'\b(?:abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "orchid-bloom"
 
 # Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "blue"
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Constants
-'\b[A-Z_][A-Z0-9_]+\b' = "yellow"
+'\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
 
 # Macros
-'[a-z_]+!' = "bright-red"
+'[a-z_]+!' = "crystal-cyan"
 
 # Attributes
-'#!?\[.*?\]' = "blue"
+'#!?\[.*?\]' = "misty-aqua"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "green"
-'r#+"[\s\S]*"#+' = "green"
+'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+'r#+"[\s\S]*"#+' = "peachy-orange"
 
 # Comments
-'//.*$' = "gray"
-'/\*[\s\S]*?\*/' = "gray"
+'//.*$' = "sage-green"
+'/\*[\s\S]*?\*/' = "sage-green"
