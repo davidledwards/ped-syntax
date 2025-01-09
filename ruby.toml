@@ -1,6 +1,6 @@
 [syntax]
 name = "Ruby"
-files = ['\.rb$']
+files = ['\.rb$', '^Gemfile$']
 
 [tokens]
 # Reserved words
