@@ -6,6 +6,12 @@ files = ['\.rs$']
 # Reserved words
 '\b(?:abstract|as|async|await|become|box|break|const|continue|crate|do|dyn|else|enum|extern|false|final|fn|for|if|impl|in|let|loop|macro|match|mod|move|mut|override|priv|pub|ref|return|self|static|struct|super|trait|true|try|type|typeof|unsafe|unsized|use|virtual|where|while|yield)\b' = "orchid-bloom"
 
+# Primitive types
+'\b(?:bool|char|f32|f64|i8|i16|i32|i64|i128|isize|str|u8|u16|u32|u64|u128|usize)\b' = "deep-sapphire"
+
+# Subset of operators
+'&|\*|\?' = "twilight-blue"
+
 # Numbers
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
