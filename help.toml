@@ -1,0 +1,11 @@
+[syntax]
+name = "Help"
+files = ['^@(help|keys|operations|bindings|colors)$']
+
+[tokens]
+# Headers
+'\[[\w\s]+\]' = "misty-aqua"
+
+# Copyright
+'^Copyright.*$' = "peachy-orange"
+'^https://.*/ped' = "peachy-orange"
