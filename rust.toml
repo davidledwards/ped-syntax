@@ -11,12 +11,16 @@ files = ['\.rs$']
 
 # Subset of operators
 '&|\*|\?' = "twilight-blue"
+'->|=>' = "misty-aqua"
 
 # Numbers
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Constants
 '\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
+
+# Types
+'\b(?:[A-Z][a-z]+)+\b' = "seafoam-mist"
 
 # Macros
 '[a-z_]+!' = "crystal-cyan"
