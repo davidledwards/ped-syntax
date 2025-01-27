@@ -1,0 +1,28 @@
+[syntax]
+name = "YAML"
+files = ['\.ya?ml$']
+
+[tokens]
+# Special values
+'\s(?:true|false|True|False|yes|no|Yes|No|on|off|On|Off|null|Null|NULL|~)\s*$' = "orchid-bloom"
+
+# Type casts
+'(?:^|\s)!!(?:binary|bool|float|int|map|null|omap|seq|set|str)' = "verdant-spring"
+
+# Keys
+'(?:^|\s).*+\s*:' = "crystal-cyan"
+
+# Block scalars
+'(?:\||\>)$' = "lavender-haze"
+
+# Demarcation
+'^(?:---|\.\.\.)' = "burnt-orange"
+
+# Double-quoted scalars
+'"(?:[^"\\]|\\.)*"' = "peachy-orange"
+
+# Single-quoted scalars
+"'(?:[^']|'')*'" = "peachy-orange"
+
+# Comments
+'#.*$' = "sage-green"
