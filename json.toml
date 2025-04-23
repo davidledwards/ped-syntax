@@ -1,0 +1,16 @@
+[syntax]
+name = "JSON"
+files = ['\.json$']
+
+[tokens]
+# Reserved words
+'\b(?:null|true|false)\b' = "orchid-bloom"
+
+# Numbers
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+
+# Keys
+'"(?:[^"\\]|\\.)*"[[:space:]]*:' = "seafoam-mist"
+
+# Basic string
+'"(?:[^"\\]|\\.)*"' = "peachy-orange"
