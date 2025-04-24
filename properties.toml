@@ -1,0 +1,13 @@
+[syntax]
+name = "Properties"
+files = ['\.properties$']
+
+[tokens]
+# Keys
+'[^#!\s][^:=\s]*\s*[:=]' = "golden-glow"
+
+# Unicode characters
+'\\u[0-9A-Fa-f]{4}' = "verdant-spring"
+
+# Comments
+'[#!].*$' = "sage-green"
