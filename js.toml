@@ -1,0 +1,29 @@
+[syntax]
+name = "JavaScript"
+files = ['\.js$']
+
+[tokens]
+# Reserved words
+'\b(?:break|case|catch|continue|default|delete|do|else|finally|for|function|if|in|instanceof|new|null|return|switch|this|throw|try|typeof|undefined|var|void|while|with|import|as|from|export|const|let|class|extends|of|get|set|await|async|yield)\b' = "orchid-bloom"
+
+# Types
+'\b(?:Array|Boolean|Date|Enumerator|Error|Function|Math|WeakMap|Map|WeakSet|Set|Symbol|Promise|Number|Object|RegExp|String|true|false)\b' = "deep-sapphire"
+
+# Decimal numbers
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+
+# Hex/Octal/Binary numbers.
+'\b0[xX][\dA-Fa-f]+\b' = "verdant-spring"
+'\b0[bB][01]+\b' = "verdant-spring"
+'\b0[oO][0-7]+\b' = "verdant-spring"
+
+# Strings
+'"(?:\\.|[^"\\\n])*"' = "peachy-orange"
+"'(?:\\\\.|[^'\\\\\\n])*'" = "peachy-orange"
+
+# Template literals.
+'`(?:\\.|[^`\\])*`' = "seafoam-mist"
+
+# Comments
+'//.*$' = "sage-green"
+'/\*[\s\S]*?\*/' = "sage-green"
