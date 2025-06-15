@@ -1,20 +1,40 @@
+# Syntax configuration for Markdown files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "Markdown"
 files = ['\.md$', '\.markdown$', '\.mk(dn?)?$']
 
 [tokens]
 # Headers
-'^#{1,6}.*' = "twilight-blue"
+'^#{1,6}[ \t].*' = "twilight-blue"
 
-# Emphasis
-'(?:^|[[:space:]])(?:_[^ ][^_]*_|\*[^ ][^*]*\*)' = "orchid-bloom"
+# Horizontal line
+'^(?:-{3,}|\*{3,}|_{3,})\s*$' = "slate-frost"
 
 # Emphasis (strong)
-'(?:^|[[:space:]])(?:__[^ ][^_]*__|\*\*[^ ][^*]*\*\*)' = "orchid-bloom"
+'(?:^|[ \t])(?:__[^ \t\n][^_\n]*__|\*\*[^ \t\n][^*\n]*\*\*)' = "verdant-spring"
 
-# code
+# Emphasis
+'(?:^|[ \t])(?:_[^ \t\n][^_\n]*_|\*[^ \t\n][^*\n]*\*)' = "orchid-bloom"
+
+# Strikethrough
+'(?:^|[ \t])~~[^ \t\n][^~\n]*~~' = "sage-green"
+
+# Blockquotes
+'^[ \t]*(?:>[ \t]+)+' = "copper-flame"
+
+# Ordered lists
+'^[ \t]*\d+\.[ \t]' = "burnt-orange"
+
+# Unordered lists
+'^[ \t]*-[ \t]' = "burnt-orange"
+
+# Code
 '```.*$' = "misty-aqua"
 '`[^`\n]*`' = "misty-aqua"
 
-# links
+# Links
 '\[.*?\]\(.*?\)' = "peachy-orange"

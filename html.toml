@@ -1,3 +1,8 @@
+# Syntax configuration for HTML files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "HTML"
 files = ['\.html?$']
@@ -8,7 +13,7 @@ files = ['\.html?$']
 '</[A-Za-z\-:]+[A-Za-z0-9\-:]*?>' = "orchid-bloom"
 
 # Strings
-'"(?:[^"\\]|\\.)*"' = "peachy-orange"
+'"(?:\\.|[^"\\])*"' = "peachy-orange"
 
 # Comments
 '<!--[\s\S]*?-->' = "sage-green"

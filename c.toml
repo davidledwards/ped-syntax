@@ -1,3 +1,8 @@
+# Syntax configuration for C/C++ files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "C/C++"
 files = ['\.c(c|pp|xx)?$', '\.h(h|pp|xx)?$', '\.(C|H)$', '\.ino$']
@@ -9,18 +14,18 @@ files = ['\.c(c|pp|xx)?$', '\.h(h|pp|xx)?$', '\.(C|H)$', '\.ino$']
 # Preprocessor reserved words
 '^\s*#\s*(?:define|elif|else|endif|error|if|ifdef|ifndef|include|line|pragma|undef)' = "misty-aqua"
 
+# Decimal Numbers
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+
 # Binary/Hex numbers
 '\b0b[01]+\b' = "crystal-cyan"
-'\b0x[0-9A-Fa-f]+\b' = "crystal-cyan"
-
-# Numbers
-'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+'\b0x[\dA-Fa-f]+\b' = "crystal-cyan"
 
 # Constants
 '\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
 
 # Comments
 '//.*$' = "sage-green"

@@ -1,3 +1,8 @@
+# Syntax configuration for JSON files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "JSON"
 files = ['\.json$']
@@ -12,5 +17,5 @@ files = ['\.json$']
 # Keys
 '"(?:[^"\\]|\\.)*"[[:space:]]*:' = "seafoam-mist"
 
-# Basic string
-'"(?:[^"\\]|\\.)*"' = "peachy-orange"
+# Basic strings
+'"(?:\\.|[^"\\])*"' = "peachy-orange"

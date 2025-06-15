@@ -1,10 +1,15 @@
+# Syntax configuration for Properties files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "Properties"
 files = ['\.properties$']
 
 [tokens]
 # Keys
-'[^#!\s][^:=\s]*\s*[:=]' = "crystal-cyan"
+'^[ \t]*(?:[\w.-]|\\u[0-9A-Fa-f]{4})+[ \t]*[:=]' = "crystal-cyan"
 
 # Unicode characters
 '\\u[0-9A-Fa-f]{4}' = "verdant-spring"

@@ -1,3 +1,8 @@
+# Syntax configuration for JavaScript files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "JavaScript"
 files = ['\.js$']
@@ -12,16 +17,16 @@ files = ['\.js$']
 # Decimal numbers
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
-# Hex/Octal/Binary numbers.
+# Hex/Octal/Binary numbers
 '\b0[xX][\dA-Fa-f]+\b' = "verdant-spring"
-'\b0[bB][01]+\b' = "verdant-spring"
 '\b0[oO][0-7]+\b' = "verdant-spring"
+'\b0[bB][01]+\b' = "verdant-spring"
 
-# Strings
+# Normal strings
 '"(?:\\.|[^"\\\n])*"' = "peachy-orange"
 "'(?:\\\\.|[^'\\\\\\n])*'" = "peachy-orange"
 
-# Template literals.
+# Template literal strings
 '`(?:\\.|[^`\\])*`' = "seafoam-mist"
 
 # Comments

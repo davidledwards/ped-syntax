@@ -1,3 +1,8 @@
+# Syntax configuration for YAML files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "YAML"
 files = ['\.ya?ml$']
@@ -10,16 +15,16 @@ files = ['\.ya?ml$']
 '(?:^|\s)!!(?:binary|bool|float|int|map|null|omap|seq|set|str)' = "verdant-spring"
 
 # Keys
-'(?:^|\s).*+\s*:' = "crystal-cyan"
+'(?:^|\s)[A-Za-z_]+[A-Za-z_._]*?\s*:' = "crystal-cyan"
 
 # Block scalars
-'(?:\||\>)$' = "lavender-haze"
+'(?:\||>)$' = "lavender-haze"
 
 # Demarcation
 '^(?:---|\.\.\.)' = "burnt-orange"
 
 # Double-quoted scalars
-'"(?:[^"\\]|\\.)*"' = "peachy-orange"
+'"(?:\\.|[^"\\])*"' = "peachy-orange"
 
 # Single-quoted scalars
 "'(?:[^']|'')*'" = "peachy-orange"

@@ -1,3 +1,8 @@
+# Syntax configuration for shell files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "Shell"
 files = [
@@ -20,8 +25,8 @@ files = [
 '-(?:eq|ne|gt|lt|ge|le|s|n|z)\b' = "misty-aqua"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
-"'(?:[^'\\\\\\n]|\\\\(?:.|\\n))*'" = "peachy-orange"
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
+"'(?:\\\\(?:.|\\n)|[^'\\\\\\n])*'" = "peachy-orange"
 
 # Comments
 '#.*$' = "sage-green"

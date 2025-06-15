@@ -1,3 +1,8 @@
+# Syntax configuration for Java files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "Java"
 files = ['\.java$']
@@ -10,7 +15,7 @@ files = ['\.java$']
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Strings
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
 
 # Comments
 '//.*$' = "sage-green"

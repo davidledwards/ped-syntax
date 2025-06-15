@@ -1,11 +1,18 @@
+# Syntax configuration for ped help files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "Help"
 files = ['^@(help|keys|operations|bindings|colors)$']
 
 [tokens]
 # Headers
-'\[[\w\s]+\]' = "misty-aqua"
+'\[[^\[\]\n]+\]' = "twilight-blue"
 
 # Copyright
-'^Copyright.*$' = "peachy-orange"
-'^https://.*/ped' = "peachy-orange"
+'^Copyright.*$' = "verdant-spring"
+
+# Links
+'\bhttps://.*/ped\b' = "peachy-orange"

@@ -1,3 +1,8 @@
+# Syntax configuration for TOML files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
 [syntax]
 name = "TOML"
 files = ['\.toml$', '\.?pedrc$']
@@ -10,16 +15,16 @@ files = ['\.toml$', '\.?pedrc$']
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
 
 # Headers
-'^\s*\[[[:word:]-\.]+\]' = "misty-aqua"
+'^[ \t]*\[[\w.-]+\]' = "misty-aqua"
 
 # Bare keys
-'^\s*[[:word:]-\.]+' = "golden-glow"
+'^[ \t]*[\w.-]+' = "golden-glow"
 
 # Multi-line basic string
 '"""[\s\S]*?"""' = "peachy-orange"
 
 # Basic string
-'"(?:[^"\\\n]|\\(?:.|\n))*"' = "peachy-orange"
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
 
 # Multi-line literal string
 "'''[\\s\\S]*?'''" = "peachy-orange"
