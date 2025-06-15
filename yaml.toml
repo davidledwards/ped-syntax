@@ -9,19 +9,22 @@ files = ['\.ya?ml$']
 
 [tokens]
 # Special values
-'\s(?:true|false|True|False|yes|no|Yes|No|on|off|On|Off|null|Null|NULL|~)\s*$' = "orchid-bloom"
+'\b(?:true|false|True|False|yes|no|Yes|No|on|off|On|Off|null|Null|NULL|~)\b' = "orchid-bloom"
 
-# Type casts
-'(?:^|\s)!!(?:binary|bool|float|int|map|null|omap|seq|set|str)' = "verdant-spring"
+# Type annotations
+'!!(?:binary|bool|float|int|map|null|seq|set|str|timestamp)\b' = "verdant-spring"
 
 # Keys
-'(?:^|\s)[A-Za-z_]+[A-Za-z_._]*?\s*:' = "crystal-cyan"
+'^ *(?:- )?[A-Za-z_]+[\w.-]*?\s*:' = "crystal-cyan"
+
+# Lists
+'^ *- ' = "crystal-cyan"
 
 # Block scalars
 '(?:\||>)$' = "lavender-haze"
 
 # Demarcation
-'^(?:---|\.\.\.)' = "burnt-orange"
+'^(?:---|\.\.\.)' = "slate-frost"
 
 # Double-quoted scalars
 '"(?:\\.|[^"\\])*"' = "peachy-orange"
