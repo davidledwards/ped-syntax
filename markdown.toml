@@ -15,12 +15,12 @@ files = ['\.md$', '\.markdown$', '\.mk(dn?)?$']
 '^(?:-{3,}|\*{3,}|_{3,})\s*$' = "slate-frost"
 
 # Emphasis (strong)
-'\*\*[^ \t\n][^*\n]*\*\*' = "verdant-spring"
-'\b__[^ \t\n][^_\n]*__\b' = "verdant-spring"
+'\*\*[^*\s][^*]*[^*\s]\*\*' = "verdant-spring"
+'__[^_\s][^_]*[^_\s]__' = "verdant-spring"
 
 # Emphasis
-'\*[^ \t\n][^*\n]*\*' = "orchid-bloom"
-'\b_[^ \t\n][^_\n]*_\b' = "orchid-bloom"
+'\*[^*\s][^*]*[^*\s]\*' = "orchid-bloom"
+'_[^_\s][^_]*[^_\s]_' = "orchid-bloom"
 
 # Strikethrough
 '(?:^|[ \t])~~[^ \t\n][^~\n]*~~' = "sage-green"
