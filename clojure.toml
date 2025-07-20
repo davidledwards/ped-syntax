@@ -9,12 +9,14 @@ files = ['\.clj[s|c]?$', '\.edn$']
 
 [tokens]
 # Common functions
-'\b(?:and|catch|condp?|dec|defn?|do(?:all|run|seq|sync)?|filter|finally|if(?:-(?:let|not))?|import|inc|let(?:fn)?|loop|map|mod|not|ns|or|print(?:ln)?|quot|reduce|recur|rem|require|throw|try|use|when(?:-(?:let|not))?)\b' = "orchid-bloom"
+'\b(?:abs|and|apply|assoc|case|catch|comp|concat|condp?|conj|cons|constantly|count|dec|defn?|dissoc|distinct|do(?:all|run|seq|sync)?|drop(?:-while)?|eval|filter|finally|first|flatten|fn|get|identity|if(?:-(?:let|not))?|import|inc|interleave|into|keys|let(?:fn)?|loop|map|max|merge(?:-with)?|min|mod|not|ns|nth|or|partial|partition|print(?:ln)?|quot|quote|reduce|recur|rem|remainder|remove|require|rest|second|sort|str|subs|take(?:-while)?|throw|try|update(?:-in)?|use|vals|when(?:-(?:let|not))?)\b' = "orchid-bloom"
 
-'\b(?:(map|nil)[?])\B' = "orchid-bloom"
-
+# Common functions whose regex needs alternate word boundaries
+'\b(?:(contains|map|nil|seq|vector)[?])\B' = "orchid-bloom"
 '\B\:else\b' = "orchid-bloom"
+'\B[+\-/*=<>]\B' = "orchid-bloom"
 
+# Common shorthand symbols
 "[#']" = "verdant-spring"
 
 # Common values
