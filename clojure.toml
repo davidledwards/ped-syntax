@@ -1,0 +1,31 @@
+# Syntax configuration for Clojure files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
+[syntax]
+name = "Clojure"
+files = ['\.clj[s|c]?$', '\.edn$']
+
+[tokens]
+# Common functions
+'\b(?:and|catch|condp?|dec|defn?|do(?:all|run|seq|sync)?|filter|finally|if(?:-(?:let|not))?|import|inc|let(?:fn)?|loop|map|mod|not|ns|or|print(?:ln)?|quot|reduce|recur|rem|require|throw|try|use|when(?:-(?:let|not))?)\b' = "orchid-bloom"
+
+'\b(?:(map|nil)[?])\B' = "orchid-bloom"
+
+'\B\:else\b' = "orchid-bloom"
+
+"[#']" = "verdant-spring"
+
+# Common values
+'\b(?:true|false|nil)\b' = "copper-flame"
+
+# Parens and blocks
+'[()]' = "deep-sapphire"
+'[\[\]]' = "deep-sapphire"
+
+# Strings
+'"([^"\\]|\\.)*?"' = "peachy-orange"
+
+# Comments
+';.*$' = "sage-green"
