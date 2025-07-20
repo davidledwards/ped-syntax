@@ -11,7 +11,7 @@ files = ['[Mm]akefile$', '\.mk$']
 # Reserved words
 '\b(?:ifdef|ifndef|ifeq|ifneq|else|endif|define|endef|export|include|override|vpath)\b' = "orchid-bloom"
 
-# Built-in functoins
+# Built-in functions
 '\b(?:subst|patsubst|wildcard|shell|addsuffix|addprefix|filter|filter-out)\b' = "crystal-cyan"
 
 # Built-in variables
