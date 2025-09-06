@@ -1,0 +1,28 @@
+# Syntax configuration for Scala files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
+[syntax]
+name = "Scala"
+files = ['\.scala$', '\.sbt$']
+
+[tokens]
+# Reserved words
+'\b(?:boolean|byte|char|double|float|int|long|new|short|this|transient|void|match|val|var|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|def|object|case|trait|lazy|implicit|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|volatile|sealed)\b' = "orchid-bloom"
+
+# Literals
+'\b(?:true|false|null)\b' = "deep-sapphire"
+
+# Numbers
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+
+# Annotations
+'@[A-Za-z_]+[A-Za-z0-9_]*(?:\[[^\]]*\])?(?:\([^)]*\))?' = "crystal-cyan"
+
+# Strings
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
+
+# Comments
+'//.*$' = "sage-green"
+'/\*[\s\S]*?\*/' = "sage-green"
