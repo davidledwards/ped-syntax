@@ -1,0 +1,22 @@
+# Syntax configuration for XML files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
+[syntax]
+name = "XML"
+files = ['\.xml$', '\.sgml$']
+
+[tokens]
+# Tags
+'<[A-Za-z\-:]+[A-Za-z0-9\-:]*?(?:\s|(?:/?>))' = "orchid-bloom"
+'</[A-Za-z\-:]+[A-Za-z0-9\-:]*?>' = "orchid-bloom"
+'<\?xml' = "twilight-blue"
+'\?>' = "twilight-blue"
+
+# Strings
+'"(?:\\.|[^"\\])*"' = "peachy-orange"
+
+# Comments
+'<!--[\s\S]*?-->' = "sage-green"
+'<!DOCTYPE[\s\S]*?[/]?>' = "sage-green"
