@@ -9,8 +9,8 @@ files = ['\.xml$', '\.sgml$']
 
 [tokens]
 # Tags
-'<[A-Za-z\-:]+[A-Za-z0-9\-:]*?(?:\s|(?:/?>))' = "orchid-bloom"
-'</[A-Za-z\-:]+[A-Za-z0-9\-:]*?>' = "orchid-bloom"
+'<[A-Za-z\-:]+[A-Za-z0-9\-:.]*?(?:\s|(?:/?>))' = "orchid-bloom"
+'</[A-Za-z\-:]+[A-Za-z0-9\-:.]*?>' = "orchid-bloom"
 '<\?xml' = "twilight-blue"
 '\?>' = "twilight-blue"
 
