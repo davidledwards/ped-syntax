@@ -9,7 +9,7 @@ files = ['\.java$']
 
 [tokens]
 # Reserved words
-'\b(?:boolean|byte|char|double|false|float|int|long|new|short|this|transient|void|break|case|catch|continue|default|do|else|finally|for|if|return|switch|throw|try|while|abstract|class|extends|final|implements|import|instanceof|interface|native|package|private|protected|public|static|strictfp|super|synchronized|throws|true|volatile)\b' = "orchid-bloom"
+'\b(?:abstract|assert|boolean|break|byte|case|catch|char|class|continue|default|do|double|else|enum|extends|false|final|finally|float|for|if|implements|import|instanceof|int|interface|long|native|new|null|package|permits|private|protected|public|record|return|sealed|short|static|strictfp|super|switch|synchronized|this|throw|throws|transient|true|try|var|void|volatile|while|yield)\b' = "orchid-bloom"
 
 # Numbers
 '\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
