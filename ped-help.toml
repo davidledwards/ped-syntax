@@ -5,7 +5,7 @@
 
 [syntax]
 name = "Help"
-files = ['^@(help|keys|operations|bindings|colors)$']
+files = ['^@(help|keys|operations|bindings|colors|syntaxes)$']
 
 [tokens]
 # Headers
