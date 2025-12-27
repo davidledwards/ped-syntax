@@ -25,7 +25,7 @@ files = ['\.rs$']
 '\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
 
 # Types
-'\b(?:[A-Z][a-z]*)+\b' = "seafoam-mist"
+'\b[A-Z][A-Za-z]*?[a-z]+\b' = "seafoam-mist"
 
 # Macros
 '[a-z_]+!' = "crystal-cyan"
