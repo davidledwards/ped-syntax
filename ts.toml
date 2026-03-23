@@ -1,15 +1,15 @@
-# Syntax configuration for JavaScript files.
+# Syntax configuration for TypeScript files.
 #
 # Regular expressions must conform to the syntax supported by regex-lite.
 # https://docs.rs/regex-lite/latest/regex_lite/index.html
 
 [syntax]
-name = "JavaScript"
-files = ['\.js$']
+name = "TypeScript"
+files = ['\.ts$']
 
 [tokens]
 # Reserved words
-'\b(?:as|async|await|break|case|catch|class|const|continue|default|delete|do|else|export|extends|false|finally|for|from|function|get|if|import|in|instanceof|let|new|null|of|return|set|switch|this|throw|true|try|typeof|undefined|var|void|while|with|yield)\b' = "orchid-bloom"
+'\b(?:abstract|as|asserts|async|await|boolean|break|byte|case|catch|class|const|continue|debugger|declare|default|delete|do|else|enum|export|extends|false|finally|final|for|from|function|get|goto|if|in|implements|import|instanceof|interface|int|in|is|infer|let|module|namespace|new|null|of|package|private|protected|public|readonly|return|static|set|super|switch|this|throw|true|try|typeof|type|undefined|var|void|while|with|yield)\b' = "orchid-bloom"
 
 # Subset of operators
 '=>' = "misty-aqua"
