@@ -1,0 +1,39 @@
+# Syntax configuration for Extended BNF files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+#
+# Refer to https://en.wikipedia.org/wiki/Extended_Backus–Naur_form
+#
+# Recognizes both BNF and Extended BNF syntax.
+
+[syntax]
+name = "BNF"
+files = ['\.e?bnf$']
+
+[tokens]
+# Terminals
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
+"'(?:\\\\(?:.|\\n)|[^'\\\\\\n])*'" = "peachy-orange"
+
+# Nonterminals (BNF only)
+'[<>]' = "copper-flame"
+
+# Definition/Termination symbols
+'[=;\.]' = "deep-sapphire"
+'::=' = "deep-sapphire"
+
+# Concatenation/Alternation symbols
+'[,|/!]' = "verdant-spring"
+
+# Optional/Repetition symbols
+'[\[\]{}]' = "pale-green"
+'(?:\(/|/\))' = "pale-green"
+'(?:\(:|:\))' = "pale-green"
+
+# Grouping symbols: complex regex necessary to avoid conflict with other symbols that
+# start and end with ( and ) respectively
+'(?:\([^*]|[^*]\))' = "pale-green"
+
+# Comments
+'\(\*[\s\S]*?\*\)' = "sage-green"
