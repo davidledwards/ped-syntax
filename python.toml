@@ -1,0 +1,48 @@
+# Syntax configuration for Python files.
+#
+# Regular expressions must conform to the syntax supported by regex-lite.
+# https://docs.rs/regex-lite/latest/regex_lite/index.html
+
+[syntax]
+name = "Python"
+files = ['\.py$']
+
+[tokens]
+# Reserved words
+'\<(?:and|as|assert|async|await|break|class|continue|def|def|elif|else|except|finally|for|from|global|if|import|in|is|lambda|map|not|or|pass|raise|return|try|with|while|yield)\>' = "orchid-bloom"
+
+# Builtin functions
+'\<(?:abs|append|apply|bool|buffer|callable|chr|clear|close|closed|cmp|coerce|compile|complex|conjugate|copy|count|delattr|dir|divmod|eval|exec|execfile|exec|extend|fileno|filter|float|flush|get|getattr|globals|has_key|hasattr|hash|hex|id|index|input|insert|int|intern|isatty|isinstance|issubclass|items|keys|len|list|locals|long|map|max|min|mode|name|oct|open|ord|pop|pow|print|range|raw_input|read|readline|readlines|reduce|reload|remove|repr|reverse|round|seek|setattr|slice|softspace|sort|str|tell|truncate|tuple|type|unichr|unicode|update|values|vars|write|writelines|xrange|zip)\>' = "deep-sapphire"
+
+# Builtin attributes
+'\<(?:__bases__|__builtin__|__class__|__debug__|__dict__|__doc__|__import__|__members__|__methods__|__name__|__self__)\>' = "twilight-blue"
+
+# Builtin objects
+'\<(?:True|False|None|self)\>' = "seafoam-mist"
+
+# Types
+'\<(?:BufferType|BuiltinFunctionType|BuiltinMethodType|ClassType|CodeType|ComplexType|DictType|EllipsisType|FileType|FloatType|FrameType|FunctionType|InstanceType|IntType|LambdaType|ListType|LongType|MethodType|ModuleType|NoneType|SliceType|StringType|TupleType|TracebackType|TypeType|UnboundMethodType|UnicodeType|XRangeType)\>' = "seafoam-mist"
+
+# Exceptions
+'\<(?:ArithmeticError|AssertionError|AttributeError|EOFError|EnvironmentError|Exception|FloatingPointError|IOError|ImportError|IndexError|KeyboardInterrupt|KeyError|LookupError|MemoryError|NameError|NotImplementedError|OSError|OverflowError|RuntimeError|StandardError|SyntaxError|SystemError|SystemExit|TypeError|UnboundLocalError|UnicodeError|ValueError|WindowsError|ZeroDivisionError)\>' = "seafoam-mist"
+
+# Decimal Numbers
+'\b[+-]?\d+(?:\.\d+)?(?:[eE][+-]?\d+)?\b' = "verdant-spring"
+
+# Binary/Hex numbers
+'\b0[bB][01]+\b' = "crystal-cyan"
+'\b0[xX][\dA-Fa-f]+\b' = "crystal-cyan"
+
+# Constants
+'\b[A-Z_][A-Z0-9_]+\b' = "golden-glow"
+
+# Strings
+'"(?:\\(?:.|\n)|[^"\\\n])*"' = "peachy-orange"
+"'(?:\\\\(?:.|\\n)|[^'\\\\\\n])*'" = "peachy-orange"
+
+# Docstrings
+'"""[^"]*?"""' = "misty-aqua"
+"'''[^']*?'''" = "misty-aqua"
+
+# Comments
+'#.*$' = "sage-green"
