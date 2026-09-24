@@ -5,7 +5,7 @@
 
 [syntax]
 name = "JavaScript"
-files = ['\.js$']
+files = ['\.(m|c)?js$']
 
 [tokens]
 # Reserved words
